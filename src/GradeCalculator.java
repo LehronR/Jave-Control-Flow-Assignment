@@ -11,15 +11,15 @@ public class GradeCalculator {
         } else if(finalGrade > 70) {
             System.out.println("Keep it up!");
         } else {
-            System.out.println("Let's work  hard to get those grades up!");
+            System.out.println("Let's work hard to get those grades up!");
         }
     }
 
     public static int getFinalGrade() {
         int totalGrades = 0;
         int sumOfAllGrades = 0;
-        int finalGrade = 0;
-        int grade = 0;
+        int finalGrade;
+        int grade;
 
         Scanner input = new Scanner(System.in);
 
@@ -34,15 +34,9 @@ public class GradeCalculator {
             } else {
                 sumOfAllGrades += grade;
                 totalGrades++;
-                System.out.println(sumOfAllGrades);
-                System.out.println(totalGrades);
             }
         }
-        System.out.println("While loop ended");
         finalGrade = sumOfAllGrades / totalGrades;
-        System.out.println(sumOfAllGrades);
-        System.out.println(totalGrades);
-        System.out.println(finalGrade);
         return finalGrade;
     }
 }
